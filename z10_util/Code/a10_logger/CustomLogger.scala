@@ -35,6 +35,7 @@ object CustomLogger {
     case _ => Level.INFO
   }
   setLogger(Logger.getLogger("rj"), Level.DEBUG, logLevel)
+  setLogger(Logger.getLogger("org.apache.kafka"), Level.DEBUG, logLevel)
 
   def setLogger(logger: Logger, logLevel: Level, thresholdLevel: Level): Unit = {
     println("Setting Root Logger...") //scalastyle:ignore
