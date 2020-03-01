@@ -42,7 +42,7 @@ object a15_ProducerWithCallback{
     }
     producer.flush() // Ensure that all buffered records are available for send()
                      // producer.close(): Flush & Close producer
-    producer.close()
+    producer.close() // **These 2 statement can also be placed in Shutdown hook 58-6:00
   }
 
 

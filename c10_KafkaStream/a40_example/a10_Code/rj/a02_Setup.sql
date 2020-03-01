@@ -1,4 +1,5 @@
 
+cd $HOME/kafka
 
 -- Cleanup existing input & output topics
 
@@ -23,6 +24,25 @@
     --property print.value=true \
     --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer \
     --property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
+
+
+-- Run the streaming app
+
+    scala -classpath target/scala-2.11/a40_example-assembly-1.0.jar rj.a10_StreamStarterApp
+
+-- Write data to input topic & check the result in output topic ^^
+
+    ./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic WordCountInput
+
+
+
+
+
+
+
+
+
+
 
 
 

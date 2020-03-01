@@ -3,43 +3,43 @@
 -- Start Kafka
 ------------------------------------------------------------------------------------
 
-vi /Users/rgunasekaran/installations/kafka_2.11-2.3.0/config/server.properties
-  + log.dirs=/Users/rgunasekaran/installations/kafka_2.11-2.3.0/data/kafka
-mkdir -p /Users/rgunasekaran/installations/kafka_2.11-2.3.0/data/kafka
+vi $HOME/kafka/config/server.properties
+  + log.dirs=/Users/raj/kafka/data/kafka
+mkdir -p $HOME/kafka/data/kafka
 
 
-cd /Users/rgunasekaran/installations/kafka_2.11-2.3.0;
+cd $HOME/kafka;
 ./bin/kafka-server-start.sh config/server.properties
 
-[2019-10-01 21:39:06,088] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
-[2019-10-01 21:39:06,369] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
-[2019-10-01 21:39:06,369] INFO starting (kafka.server.KafkaServer)
-[2019-10-01 21:39:06,370] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
-[2019-10-01 21:39:06,384] INFO [ZooKeeperClient Kafka server] Initializing a new session to localhost:2181. (kafka.zookeeper.ZooKeeperClient)
-[2019-10-01 21:39:06,390] INFO Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,390] INFO Client environment:host.name=192.168.0.13 (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,390] INFO Client environment:java.version=1.8.0_121 (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,390] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,390] INFO Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,390] INFO Client environment:java.class.path=/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/activation-1.1.1.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/aopalliance-repackaged-2.5.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/argparse4j-0.7.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/audience-annotations-0.5.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/commons-lang3-3.8.1.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/connect-api-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/connect-basic-auth-extension-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/connect-file-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/connect-json-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/connect-runtime-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/connect-transforms-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/guava-20.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/hk2-api-2.5.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/hk2-locator-2.5.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/hk2-utils-2.5.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jackson-annotations-2.9.9.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jackson-core-2.9.9.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jackson-databind-2.9.9.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jackson-dataformat-csv-2.9.9.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jackson-datatype-jdk8-2.9.9.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jackson-jaxrs-base-2.9.9.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jackson-jaxrs-json-provider-2.9.9.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jackson-module-jaxb-annotations-2.9.9.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jackson-module-paranamer-2.9.9.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jackson-module-scala_2.11-2.9.9.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jakarta.annotation-api-1.3.4.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jakarta.inject-2.5.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jakarta.ws.rs-api-2.1.5.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/javassist-3.22.0-CR2.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/javax.servlet-api-3.1.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/javax.ws.rs-api-2.1.1.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jaxb-api-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jersey-client-2.28.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jersey-common-2.28.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jersey-container-servlet-2.28.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jersey-container-servlet-core-2.28.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jersey-hk2-2.28.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jersey-media-jaxb-2.28.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jersey-server-2.28.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jetty-client-9.4.18.v20190429.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jetty-continuation-9.4.18.v20190429.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jetty-http-9.4.18.v20190429.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jetty-io-9.4.18.v20190429.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jetty-security-9.4.18.v20190429.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jetty-server-9.4.18.v20190429.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jetty-servlet-9.4.18.v20190429.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jetty-servlets-9.4.18.v20190429.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jetty-util-9.4.18.v20190429.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jopt-simple-5.0.4.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/jsr305-3.0.2.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/kafka-clients-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/kafka-log4j-appender-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/kafka-streams-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/kafka-streams-examples-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/kafka-streams-scala_2.11-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/kafka-streams-test-utils-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/kafka-tools-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/kafka_2.11-2.3.0-sources.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/kafka_2.11-2.3.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/log4j-1.2.17.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/lz4-java-1.6.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/maven-artifact-3.6.1.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/metrics-core-2.2.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/paranamer-2.8.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/plexus-utils-3.2.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/reflections-0.9.11.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/rocksdbjni-5.18.3.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/scala-library-2.11.12.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/scala-logging_2.11-3.9.0.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/scala-reflect-2.11.12.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/slf4j-api-1.7.26.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/slf4j-log4j12-1.7.26.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/snappy-java-1.1.7.3.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/spotbugs-annotations-3.1.9.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/validation-api-2.0.1.Final.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/zkclient-0.11.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/zookeeper-3.4.14.jar:/Users/rgunasekaran/installations/kafka_2.11-2.3.0/bin/../libs/zstd-jni-1.4.0-1.jar (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,394] INFO Client environment:java.library.path=/Users/rgunasekaran/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,394] INFO Client environment:java.io.tmpdir=/var/folders/xl/jgm6cj295330fyryvqpwmt61pf5yhs/T/ (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,394] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,394] INFO Client environment:os.name=Mac OS X (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,394] INFO Client environment:os.arch=x86_64 (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,394] INFO Client environment:os.version=10.12.6 (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,394] INFO Client environment:user.name=rgunasekaran (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,394] INFO Client environment:user.home=/Users/rgunasekaran (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,394] INFO Client environment:user.dir=/Users/rgunasekaran/installations/kafka_2.11-2.3.0 (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,395] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@55141def (org.apache.zookeeper.ZooKeeper)
-[2019-10-01 21:39:06,408] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
-[2019-10-01 21:39:06,410] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
-[2019-10-01 21:39:06,422] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
-[2019-10-01 21:39:06,495] INFO Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x100091f51c90000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
-[2019-10-01 21:39:06,498] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
-[2019-10-01 21:39:06,718] INFO Cluster ID = 8UfVGETYR7S2gio_sHk3sQ (kafka.server.KafkaServer)
-[2019-10-01 21:39:06,721] WARN No meta.properties file under dir /Users/rgunasekaran/installations/kafka_2.11-2.3.0/data/kafka/meta.properties (kafka.server.BrokerMetadataCheckpoint)
-[2019-10-01 21:39:06,756] INFO KafkaConfig values:
+[2019-11-29 15:48:12,254] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+[2019-11-29 15:48:12,847] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2019-11-29 15:48:12,848] INFO starting (kafka.server.KafkaServer)
+[2019-11-29 15:48:12,849] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2019-11-29 15:48:12,873] INFO [ZooKeeperClient Kafka server] Initializing a new session to localhost:2181. (kafka.zookeeper.ZooKeeperClient)
+[2019-11-29 15:48:17,883] INFO Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,884] INFO Client environment:host.name=192.168.0.11 (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,884] INFO Client environment:java.version=1.8.0_232 (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,884] INFO Client environment:java.vendor=AdoptOpenJDK (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,884] INFO Client environment:java.home=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,884] INFO Client environment:java.class.path=/Users/raj/kafka/bin/../libs/activation-1.1.1.jar:/Users/raj/kafka/bin/../libs/aopalliance-repackaged-2.5.0.jar:/Users/raj/kafka/bin/../libs/argparse4j-0.7.0.jar:/Users/raj/kafka/bin/../libs/audience-annotations-0.5.0.jar:/Users/raj/kafka/bin/../libs/commons-lang3-3.8.1.jar:/Users/raj/kafka/bin/../libs/connect-api-2.3.1.jar:/Users/raj/kafka/bin/../libs/connect-basic-auth-extension-2.3.1.jar:/Users/raj/kafka/bin/../libs/connect-file-2.3.1.jar:/Users/raj/kafka/bin/../libs/connect-json-2.3.1.jar:/Users/raj/kafka/bin/../libs/connect-runtime-2.3.1.jar:/Users/raj/kafka/bin/../libs/connect-transforms-2.3.1.jar:/Users/raj/kafka/bin/../libs/guava-20.0.jar:/Users/raj/kafka/bin/../libs/hk2-api-2.5.0.jar:/Users/raj/kafka/bin/../libs/hk2-locator-2.5.0.jar:/Users/raj/kafka/bin/../libs/hk2-utils-2.5.0.jar:/Users/raj/kafka/bin/../libs/jackson-annotations-2.10.0.jar:/Users/raj/kafka/bin/../libs/jackson-core-2.10.0.jar:/Users/raj/kafka/bin/../libs/jackson-databind-2.10.0.jar:/Users/raj/kafka/bin/../libs/jackson-dataformat-csv-2.10.0.jar:/Users/raj/kafka/bin/../libs/jackson-datatype-jdk8-2.10.0.jar:/Users/raj/kafka/bin/../libs/jackson-jaxrs-base-2.10.0.jar:/Users/raj/kafka/bin/../libs/jackson-jaxrs-json-provider-2.10.0.jar:/Users/raj/kafka/bin/../libs/jackson-module-jaxb-annotations-2.10.0.jar:/Users/raj/kafka/bin/../libs/jackson-module-paranamer-2.10.0.jar:/Users/raj/kafka/bin/../libs/jackson-module-scala_2.12-2.10.0.jar:/Users/raj/kafka/bin/../libs/jakarta.activation-api-1.2.1.jar:/Users/raj/kafka/bin/../libs/jakarta.annotation-api-1.3.4.jar:/Users/raj/kafka/bin/../libs/jakarta.inject-2.5.0.jar:/Users/raj/kafka/bin/../libs/jakarta.ws.rs-api-2.1.5.jar:/Users/raj/kafka/bin/../libs/jakarta.xml.bind-api-2.3.2.jar:/Users/raj/kafka/bin/../libs/javassist-3.22.0-CR2.jar:/Users/raj/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/Users/raj/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/Users/raj/kafka/bin/../libs/jaxb-api-2.3.0.jar:/Users/raj/kafka/bin/../libs/jersey-client-2.28.jar:/Users/raj/kafka/bin/../libs/jersey-common-2.28.jar:/Users/raj/kafka/bin/../libs/jersey-container-servlet-2.28.jar:/Users/raj/kafka/bin/../libs/jersey-container-servlet-core-2.28.jar:/Users/raj/kafka/bin/../libs/jersey-hk2-2.28.jar:/Users/raj/kafka/bin/../libs/jersey-media-jaxb-2.28.jar:/Users/raj/kafka/bin/../libs/jersey-server-2.28.jar:/Users/raj/kafka/bin/../libs/jetty-client-9.4.18.v20190429.jar:/Users/raj/kafka/bin/../libs/jetty-continuation-9.4.18.v20190429.jar:/Users/raj/kafka/bin/../libs/jetty-http-9.4.18.v20190429.jar:/Users/raj/kafka/bin/../libs/jetty-io-9.4.18.v20190429.jar:/Users/raj/kafka/bin/../libs/jetty-security-9.4.18.v20190429.jar:/Users/raj/kafka/bin/../libs/jetty-server-9.4.18.v20190429.jar:/Users/raj/kafka/bin/../libs/jetty-servlet-9.4.18.v20190429.jar:/Users/raj/kafka/bin/../libs/jetty-servlets-9.4.18.v20190429.jar:/Users/raj/kafka/bin/../libs/jetty-util-9.4.18.v20190429.jar:/Users/raj/kafka/bin/../libs/jopt-simple-5.0.4.jar:/Users/raj/kafka/bin/../libs/jsr305-3.0.2.jar:/Users/raj/kafka/bin/../libs/kafka-clients-2.3.1.jar:/Users/raj/kafka/bin/../libs/kafka-log4j-appender-2.3.1.jar:/Users/raj/kafka/bin/../libs/kafka-streams-2.3.1.jar:/Users/raj/kafka/bin/../libs/kafka-streams-examples-2.3.1.jar:/Users/raj/kafka/bin/../libs/kafka-streams-scala_2.12-2.3.1.jar:/Users/raj/kafka/bin/../libs/kafka-streams-test-utils-2.3.1.jar:/Users/raj/kafka/bin/../libs/kafka-tools-2.3.1.jar:/Users/raj/kafka/bin/../libs/kafka_2.12-2.3.1-sources.jar:/Users/raj/kafka/bin/../libs/kafka_2.12-2.3.1.jar:/Users/raj/kafka/bin/../libs/log4j-1.2.17.jar:/Users/raj/kafka/bin/../libs/lz4-java-1.6.0.jar:/Users/raj/kafka/bin/../libs/maven-artifact-3.6.1.jar:/Users/raj/kafka/bin/../libs/metrics-core-2.2.0.jar:/Users/raj/kafka/bin/../libs/osgi-resource-locator-1.0.1.jar:/Users/raj/kafka/bin/../libs/paranamer-2.8.jar:/Users/raj/kafka/bin/../libs/plexus-utils-3.2.0.jar:/Users/raj/kafka/bin/../libs/reflections-0.9.11.jar:/Users/raj/kafka/bin/../libs/rocksdbjni-5.18.3.jar:/Users/raj/kafka/bin/../libs/scala-library-2.12.10.jar:/Users/raj/kafka/bin/../libs/scala-library-2.12.8.jar:/Users/raj/kafka/bin/../libs/scala-logging_2.12-3.9.0.jar:/Users/raj/kafka/bin/../libs/scala-reflect-2.12.8.jar:/Users/raj/kafka/bin/../libs/slf4j-api-1.7.26.jar:/Users/raj/kafka/bin/../libs/slf4j-log4j12-1.7.26.jar:/Users/raj/kafka/bin/../libs/snappy-java-1.1.7.3.jar:/Users/raj/kafka/bin/../libs/spotbugs-annotations-3.1.9.jar:/Users/raj/kafka/bin/../libs/validation-api-2.0.1.Final.jar:/Users/raj/kafka/bin/../libs/zkclient-0.11.jar:/Users/raj/kafka/bin/../libs/zookeeper-3.4.14.jar:/Users/raj/kafka/bin/../libs/zstd-jni-1.4.0-1.jar (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,889] INFO Client environment:java.library.path=/Users/raj/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,889] INFO Client environment:java.io.tmpdir=/var/folders/ty/297_tr6524nf3p8vynp7v1z00000gn/T/ (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,889] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,889] INFO Client environment:os.name=Mac OS X (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,889] INFO Client environment:os.arch=x86_64 (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,889] INFO Client environment:os.version=10.15.1 (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,890] INFO Client environment:user.name=raj (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,890] INFO Client environment:user.home=/Users/raj (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,890] INFO Client environment:user.dir=/Users/raj/installations/kafka_2.12-2.3.1 (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,892] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@63355449 (org.apache.zookeeper.ZooKeeper)
+[2019-11-29 15:48:17,906] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+[2019-11-29 15:48:17,909] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2019-11-29 15:48:17,926] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2019-11-29 15:48:17,964] INFO Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x100012668690000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2019-11-29 15:48:17,968] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
+[2019-11-29 15:48:18,293] INFO Cluster ID = HkImPjXfQQ23vqi1YaxGeA (kafka.server.KafkaServer)
+[2019-11-29 15:48:18,299] WARN No meta.properties file under dir /Users/raj/kafka/data/kafka/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+[2019-11-29 15:48:18,371] INFO KafkaConfig values:
 	advertised.host.name = null
 	advertised.listeners = null
 	advertised.port = null
@@ -98,7 +98,7 @@ cd /Users/rgunasekaran/installations/kafka_2.11-2.3.0;
 	log.cleaner.threads = 1
 	log.cleanup.policy = [delete]
 	log.dir = /tmp/kafka-logs
-	log.dirs = /Users/rgunasekaran/installations/kafka_2.11-2.3.0/data/kafka
+	log.dirs = /Users/raj/kafka/data/kafka
 	log.flush.interval.messages = 9223372036854775807
 	log.flush.interval.ms = null
 	log.flush.offset.checkpoint.interval.ms = 60000
@@ -231,7 +231,7 @@ cd /Users/rgunasekaran/installations/kafka_2.11-2.3.0;
 	zookeeper.set.acl = false
 	zookeeper.sync.time.ms = 2000
  (kafka.server.KafkaConfig)
-[2019-10-01 21:39:06,766] INFO KafkaConfig values:
+[2019-11-29 15:48:18,381] INFO KafkaConfig values:
 	advertised.host.name = null
 	advertised.listeners = null
 	advertised.port = null
@@ -290,7 +290,7 @@ cd /Users/rgunasekaran/installations/kafka_2.11-2.3.0;
 	log.cleaner.threads = 1
 	log.cleanup.policy = [delete]
 	log.dir = /tmp/kafka-logs
-	log.dirs = /Users/rgunasekaran/installations/kafka_2.11-2.3.0/data/kafka
+	log.dirs = /Users/raj/kafka/data/kafka
 	log.flush.interval.messages = 9223372036854775807
 	log.flush.interval.ms = null
 	log.flush.offset.checkpoint.interval.ms = 60000
@@ -423,40 +423,40 @@ cd /Users/rgunasekaran/installations/kafka_2.11-2.3.0;
 	zookeeper.set.acl = false
 	zookeeper.sync.time.ms = 2000
  (kafka.server.KafkaConfig)
-[2019-10-01 21:39:06,787] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2019-10-01 21:39:06,787] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2019-10-01 21:39:06,788] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
-[2019-10-01 21:39:06,811] INFO Loading logs. (kafka.log.LogManager)
-[2019-10-01 21:39:06,815] INFO Logs loading complete in 4 ms. (kafka.log.LogManager)
-[2019-10-01 21:39:06,823] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
-[2019-10-01 21:39:06,825] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
-[2019-10-01 21:39:07,117] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
-[2019-10-01 21:39:07,144] INFO [SocketServer brokerId=0] Created data-plane acceptor and processors for endpoint : EndPoint(null,9092,ListenerName(PLAINTEXT),PLAINTEXT) (kafka.network.SocketServer)
-[2019-10-01 21:39:07,146] INFO [SocketServer brokerId=0] Started 1 acceptor threads for data-plane (kafka.network.SocketServer)
-[2019-10-01 21:39:07,161] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2019-10-01 21:39:07,162] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2019-10-01 21:39:07,163] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2019-10-01 21:39:07,163] INFO [ExpirationReaper-0-ElectPreferredLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2019-10-01 21:39:07,172] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
-[2019-10-01 21:39:07,198] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.zk.KafkaZkClient)
-[2019-10-01 21:39:07,215] INFO Stat of the created znode at /brokers/ids/0 is: 24,24,1569983947210,1569983947210,1,0,0,72067624158691328,194,0,24
+[2019-11-29 15:48:18,411] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2019-11-29 15:48:18,411] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2019-11-29 15:48:18,411] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2019-11-29 15:48:18,446] INFO Loading logs. (kafka.log.LogManager)
+[2019-11-29 15:48:18,455] INFO Logs loading complete in 9 ms. (kafka.log.LogManager)
+[2019-11-29 15:48:18,468] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2019-11-29 15:48:18,471] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2019-11-29 15:48:18,809] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2019-11-29 15:48:18,850] INFO [SocketServer brokerId=0] Created data-plane acceptor and processors for endpoint : EndPoint(null,9092,ListenerName(PLAINTEXT),PLAINTEXT) (kafka.network.SocketServer)
+[2019-11-29 15:48:18,851] INFO [SocketServer brokerId=0] Started 1 acceptor threads for data-plane (kafka.network.SocketServer)
+[2019-11-29 15:48:18,878] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-11-29 15:48:18,879] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-11-29 15:48:18,879] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-11-29 15:48:18,880] INFO [ExpirationReaper-0-ElectPreferredLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-11-29 15:48:18,895] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2019-11-29 15:48:23,932] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.zk.KafkaZkClient)
+[2019-11-29 15:48:23,959] INFO Stat of the created znode at /brokers/ids/0 is: 24,24,1575064103952,1575064103952,1,0,0,72058858510024704,194,0,24
  (kafka.zk.KafkaZkClient)
-[2019-10-01 21:39:07,215] INFO Registered broker 0 at path /brokers/ids/0 with addresses: ArrayBuffer(EndPoint(192.168.0.13,9092,ListenerName(PLAINTEXT),PLAINTEXT)), czxid (broker epoch): 24 (kafka.zk.KafkaZkClient)
-[2019-10-01 21:39:07,216] WARN No meta.properties file under dir /Users/rgunasekaran/installations/kafka_2.11-2.3.0/data/kafka/meta.properties (kafka.server.BrokerMetadataCheckpoint)
-[2019-10-01 21:39:07,257] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2019-10-01 21:39:07,259] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2019-10-01 21:39:07,260] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
-[2019-10-01 21:39:07,268] INFO Successfully created /controller_epoch with initial epoch 0 (kafka.zk.KafkaZkClient)
-[2019-10-01 21:39:07,271] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
-[2019-10-01 21:39:07,272] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
-[2019-10-01 21:39:07,273] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
-[2019-10-01 21:39:07,281] INFO [ProducerId Manager 0]: Acquired new producerId block (brokerId:0,blockStartProducerId:0,blockEndProducerId:999) by writing to Zk with path version 1 (kafka.coordinator.transaction.ProducerIdManager)
-[2019-10-01 21:39:07,299] INFO [TransactionCoordinator id=0] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
-[2019-10-01 21:39:07,300] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
-[2019-10-01 21:39:07,300] INFO [TransactionCoordinator id=0] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
-[2019-10-01 21:39:07,335] INFO [/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
-[2019-10-01 21:39:07,342] INFO [SocketServer brokerId=0] Started data-plane processors for 1 acceptors (kafka.network.SocketServer)
-[2019-10-01 21:39:07,346] INFO Kafka version: 2.3.0 (org.apache.kafka.common.utils.AppInfoParser)
-[2019-10-01 21:39:07,346] INFO Kafka commitId: fc1aaa116b661c8a (org.apache.kafka.common.utils.AppInfoParser)
-[2019-10-01 21:39:07,346] INFO Kafka startTimeMs: 1569983947343 (org.apache.kafka.common.utils.AppInfoParser)
-[2019-10-01 21:39:07,347] INFO [KafkaServer id=0] started (kafka.server.KafkaServer)
+[2019-11-29 15:48:23,960] INFO Registered broker 0 at path /brokers/ids/0 with addresses: ArrayBuffer(EndPoint(192.168.0.11,9092,ListenerName(PLAINTEXT),PLAINTEXT)), czxid (broker epoch): 24 (kafka.zk.KafkaZkClient)
+[2019-11-29 15:48:23,961] WARN No meta.properties file under dir /Users/raj/kafka/data/kafka/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+[2019-11-29 15:48:24,051] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-11-29 15:48:24,056] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-11-29 15:48:24,057] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2019-11-29 15:48:24,067] INFO Successfully created /controller_epoch with initial epoch 0 (kafka.zk.KafkaZkClient)
+[2019-11-29 15:48:24,085] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2019-11-29 15:48:24,087] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2019-11-29 15:48:24,093] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 7 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-11-29 15:48:24,101] INFO [ProducerId Manager 0]: Acquired new producerId block (brokerId:0,blockStartProducerId:0,blockEndProducerId:999) by writing to Zk with path version 1 (kafka.coordinator.transaction.ProducerIdManager)
+[2019-11-29 15:48:24,141] INFO [TransactionCoordinator id=0] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2019-11-29 15:48:24,143] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2019-11-29 15:48:24,143] INFO [TransactionCoordinator id=0] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2019-11-29 15:48:24,213] INFO [/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2019-11-29 15:48:24,235] INFO [SocketServer brokerId=0] Started data-plane processors for 1 acceptors (kafka.network.SocketServer)
+[2019-11-29 15:48:24,245] INFO Kafka version: 2.3.1 (org.apache.kafka.common.utils.AppInfoParser)
+[2019-11-29 15:48:24,245] INFO Kafka commitId: 18a913733fb71c01 (org.apache.kafka.common.utils.AppInfoParser)
+[2019-11-29 15:48:24,245] INFO Kafka startTimeMs: 1575064104237 (org.apache.kafka.common.utils.AppInfoParser)
+[2019-11-29 15:48:24,248] INFO [KafkaServer id=0] started (kafka.server.KafkaServer)
