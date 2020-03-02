@@ -3,6 +3,7 @@
   "namespace": "rj.a30_Generated_Avro",
   "name": "Customer",
   "doc": "Avro Schema for our Customer",
+  "version": "1",
   "fields": [
     { "name": "first_name", "type": "string", "doc": "First Name of Customer" },
     { "name": "last_name", "type": "string", "doc": "Last Name of Customer" },

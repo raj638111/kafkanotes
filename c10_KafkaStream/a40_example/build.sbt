@@ -6,9 +6,6 @@ scalaSource in Test := baseDirectory.value / "a20_Test"
 Compile / scalaSource := baseDirectory.value / "a12_resource"
 Test / scalaSource := baseDirectory.value / "a22_resource"
 
-seq(sbtavro.SbtAvro.avroSettings: _*)
-(javaSource in avroConfig) := baseDirectory.value / "a10_Code/rj/a30_avro"
-(stringType in avroConfig) := "String"
 
 scalaVersion := "2.11.8"
 

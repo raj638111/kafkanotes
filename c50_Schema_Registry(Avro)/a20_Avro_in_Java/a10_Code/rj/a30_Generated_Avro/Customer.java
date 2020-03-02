@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.example;
+package rj.a30_Generated_Avro;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -14,8 +14,8 @@ import org.apache.avro.message.SchemaStore;
 /** Avro Schema for our Customer */
 @org.apache.avro.specific.AvroGenerated
 public class Customer extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4329099212826049740L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Customer\",\"namespace\":\"com.example\",\"doc\":\"Avro Schema for our Customer\",\"fields\":[{\"name\":\"first_name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"First Name of Customer\"},{\"name\":\"last_name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"Last Name of Customer\"},{\"name\":\"age\",\"type\":\"int\",\"doc\":\"Age at the time of registration\"},{\"name\":\"height\",\"type\":\"float\",\"doc\":\"Height at the time of registration in cm\"},{\"name\":\"weight\",\"type\":\"float\",\"doc\":\"Weight at the time of registration in kg\"},{\"name\":\"automated_email\",\"type\":\"boolean\",\"doc\":\"Field indicating if the user is enrolled in marketing emails\",\"default\":true}]}");
+  private static final long serialVersionUID = 4930215933630918764L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Customer\",\"namespace\":\"rj.a30_Generated_Avro\",\"doc\":\"Avro Schema for our Customer\",\"fields\":[{\"name\":\"first_name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"First Name of Customer\"},{\"name\":\"last_name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"doc\":\"Last Name of Customer\"},{\"name\":\"age\",\"type\":\"int\",\"doc\":\"Age at the time of registration\"},{\"name\":\"height\",\"type\":\"float\",\"doc\":\"Height at the time of registration in cm\"},{\"name\":\"weight\",\"type\":\"float\",\"doc\":\"Weight at the time of registration in kg\"},{\"name\":\"automated_email\",\"type\":\"boolean\",\"doc\":\"Field indicating if the user is enrolled in marketing emails\",\"default\":true}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -224,8 +224,8 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
    * Creates a new Customer RecordBuilder.
    * @return A new Customer RecordBuilder
    */
-  public static com.example.Customer.Builder newBuilder() {
-    return new com.example.Customer.Builder();
+  public static rj.a30_Generated_Avro.Customer.Builder newBuilder() {
+    return new rj.a30_Generated_Avro.Customer.Builder();
   }
 
   /**
@@ -233,8 +233,8 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
    * @param other The existing builder to copy.
    * @return A new Customer RecordBuilder
    */
-  public static com.example.Customer.Builder newBuilder(com.example.Customer.Builder other) {
-    return new com.example.Customer.Builder(other);
+  public static rj.a30_Generated_Avro.Customer.Builder newBuilder(rj.a30_Generated_Avro.Customer.Builder other) {
+    return new rj.a30_Generated_Avro.Customer.Builder(other);
   }
 
   /**
@@ -242,8 +242,8 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
    * @param other The existing instance to copy.
    * @return A new Customer RecordBuilder
    */
-  public static com.example.Customer.Builder newBuilder(com.example.Customer other) {
-    return new com.example.Customer.Builder(other);
+  public static rj.a30_Generated_Avro.Customer.Builder newBuilder(rj.a30_Generated_Avro.Customer other) {
+    return new rj.a30_Generated_Avro.Customer.Builder(other);
   }
 
   /**
@@ -274,7 +274,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.example.Customer.Builder other) {
+    private Builder(rj.a30_Generated_Avro.Customer.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.first_name)) {
         this.first_name = data().deepCopy(fields()[0].schema(), other.first_name);
@@ -306,7 +306,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
      * Creates a Builder by copying an existing Customer instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.example.Customer other) {
+    private Builder(rj.a30_Generated_Avro.Customer other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.first_name)) {
         this.first_name = data().deepCopy(fields()[0].schema(), other.first_name);
@@ -349,7 +349,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'first_name'.
       * @return This builder.
       */
-    public com.example.Customer.Builder setFirstName(java.lang.String value) {
+    public rj.a30_Generated_Avro.Customer.Builder setFirstName(java.lang.String value) {
       validate(fields()[0], value);
       this.first_name = value;
       fieldSetFlags()[0] = true;
@@ -371,7 +371,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
       * First Name of Customer
       * @return This builder.
       */
-    public com.example.Customer.Builder clearFirstName() {
+    public rj.a30_Generated_Avro.Customer.Builder clearFirstName() {
       first_name = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -392,7 +392,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'last_name'.
       * @return This builder.
       */
-    public com.example.Customer.Builder setLastName(java.lang.String value) {
+    public rj.a30_Generated_Avro.Customer.Builder setLastName(java.lang.String value) {
       validate(fields()[1], value);
       this.last_name = value;
       fieldSetFlags()[1] = true;
@@ -414,7 +414,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
       * Last Name of Customer
       * @return This builder.
       */
-    public com.example.Customer.Builder clearLastName() {
+    public rj.a30_Generated_Avro.Customer.Builder clearLastName() {
       last_name = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -435,7 +435,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'age'.
       * @return This builder.
       */
-    public com.example.Customer.Builder setAge(int value) {
+    public rj.a30_Generated_Avro.Customer.Builder setAge(int value) {
       validate(fields()[2], value);
       this.age = value;
       fieldSetFlags()[2] = true;
@@ -457,7 +457,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
       * Age at the time of registration
       * @return This builder.
       */
-    public com.example.Customer.Builder clearAge() {
+    public rj.a30_Generated_Avro.Customer.Builder clearAge() {
       fieldSetFlags()[2] = false;
       return this;
     }
@@ -477,7 +477,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'height'.
       * @return This builder.
       */
-    public com.example.Customer.Builder setHeight(float value) {
+    public rj.a30_Generated_Avro.Customer.Builder setHeight(float value) {
       validate(fields()[3], value);
       this.height = value;
       fieldSetFlags()[3] = true;
@@ -499,7 +499,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
       * Height at the time of registration in cm
       * @return This builder.
       */
-    public com.example.Customer.Builder clearHeight() {
+    public rj.a30_Generated_Avro.Customer.Builder clearHeight() {
       fieldSetFlags()[3] = false;
       return this;
     }
@@ -519,7 +519,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'weight'.
       * @return This builder.
       */
-    public com.example.Customer.Builder setWeight(float value) {
+    public rj.a30_Generated_Avro.Customer.Builder setWeight(float value) {
       validate(fields()[4], value);
       this.weight = value;
       fieldSetFlags()[4] = true;
@@ -541,7 +541,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
       * Weight at the time of registration in kg
       * @return This builder.
       */
-    public com.example.Customer.Builder clearWeight() {
+    public rj.a30_Generated_Avro.Customer.Builder clearWeight() {
       fieldSetFlags()[4] = false;
       return this;
     }
@@ -561,7 +561,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'automated_email'.
       * @return This builder.
       */
-    public com.example.Customer.Builder setAutomatedEmail(boolean value) {
+    public rj.a30_Generated_Avro.Customer.Builder setAutomatedEmail(boolean value) {
       validate(fields()[5], value);
       this.automated_email = value;
       fieldSetFlags()[5] = true;
@@ -583,7 +583,7 @@ public class Customer extends org.apache.avro.specific.SpecificRecordBase implem
       * Field indicating if the user is enrolled in marketing emails
       * @return This builder.
       */
-    public com.example.Customer.Builder clearAutomatedEmail() {
+    public rj.a30_Generated_Avro.Customer.Builder clearAutomatedEmail() {
       fieldSetFlags()[5] = false;
       return this;
     }
