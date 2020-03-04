@@ -16,7 +16,7 @@
         + No scalability
         + Hard to monitor
 
--- Distributed Mode
+-- Distributed Mode (For Production)
 
     # Multiple Workers
         + Runs connectors & tasks

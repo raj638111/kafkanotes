@@ -1,6 +1,7 @@
 
 # **Wait for ~5 minutes for the connectors to get loaded
 
+cd /Users/raj/ws/stephane/kafka-connect/code
 /Users/raj/ws/stephane/kafka-connect/code $ docker-compose up kafka-cluster
 Starting code_kafka-cluster_1 ... done
 Attaching to code_kafka-cluster_1

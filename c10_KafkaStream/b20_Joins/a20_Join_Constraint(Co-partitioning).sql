@@ -16,5 +16,4 @@
     # Write back the topics through kafka before join
       (Network cost)
 
-    #
 

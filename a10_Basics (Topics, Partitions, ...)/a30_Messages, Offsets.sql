@@ -17,4 +17,4 @@
 
 -- Message Retention
   + Messages are retained only for a week by default
-  
+
