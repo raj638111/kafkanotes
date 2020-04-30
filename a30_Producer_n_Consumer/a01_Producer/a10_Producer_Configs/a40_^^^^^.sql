@@ -18,7 +18,7 @@
 
 -- batch.size
 
-    # Default: 16,384 bytes
+    # Default: 16,384 bytes (16 KB)
 
 -- linger.ms
 

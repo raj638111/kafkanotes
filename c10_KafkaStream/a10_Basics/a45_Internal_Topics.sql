@@ -3,7 +3,7 @@
 -- Internal topics
 
     # Kafka streams application creates internal / intermediary topics
-    # Used to save/ restor state & repartition data
+    # Used to save/ restore state & repartition data
     # Are managed by Kafka stream
     # Are prefixed with the `application.id` parameter
 

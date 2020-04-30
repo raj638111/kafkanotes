@@ -19,6 +19,7 @@
   + Lot of consumers are grouped into one Consumer Group
   + Exclusive Partitions
     - Each consumer reads exclusively from a specific partition
-    - Achieved by Kafka using Group coordinator & Consumer Coordinator
+    - Achieved by Kafka using Group coordinator (one of the
+      broker acts as group coordinator ??) & Consumer Coordinator
   + What if we have more consumer than the no of partitions?
     - Those consumers will be inactive

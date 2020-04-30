@@ -7,9 +7,10 @@
       (Aggregation(cout, sum, ...), join, windowing)
 
     # State store can either be,
-        + RocksDB database
+        + RocksDB database (Can be eithe in-memory or peristent)
         + In-memory hash map
         + Or other convenient data structure
+        https://simplydistributed.wordpress.com/2017/03/21/kafka-streams-state-stores/
 
     # Fault tolerance & Automatic recovery
         + KStream offers fault-tolerance & automatic recovery of local
@@ -33,3 +34,4 @@
 
     # https://docs.confluent.io/current/streams/architecture.html#streams-architecture-state
     # https://docs.confluent.io/current/streams/architecture.html#state
+    # https://kafka.apache.org/20/documentation/streams/developer-guide/interactive-queries.html

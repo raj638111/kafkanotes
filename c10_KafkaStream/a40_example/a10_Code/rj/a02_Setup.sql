@@ -16,7 +16,7 @@ cd $HOME/kafka
 
 -- Use Consumer to read output topic
 
-  ./bin/kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 \
+  kafka-console-consumer --bootstrap-server 127.0.0.1:9092 \
     --topic WordCountOutput \
     --from-beginning \
     --formatter kafka.tools.DefaultMessageFormatter \

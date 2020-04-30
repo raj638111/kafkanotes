@@ -24,9 +24,6 @@ object a10_StreamStarterApp {
       p.put(StreamsConfig.APPLICATION_ID_CONFIG, "wordcount-application")
       p.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
       p.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest")
-      //TODO: I suppose this is not needed, as we already have Type in KStream[String, String] ???
-      p.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.toString.getClass)
-      p.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.toString.getClass)
       p
     }
 
@@ -62,7 +59,7 @@ object a10_StreamStarterApp {
 
 
 
-
+scala -classpath target/scala-2.11/a40_example-assembly-1.0.jar rj.a10_StreamStarterApp
   p.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String.getClass)
   p.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String.getClass)
 */

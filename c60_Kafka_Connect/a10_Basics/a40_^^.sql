@@ -9,7 +9,7 @@
         + A task is linked to a connector configuration
 
     # Job
-        + A Job configuration can spaws multiple tasks
+        + A Job configuration can spawn multiple tasks
 
     # Workers
         + Tasks are executed by Kafka Connect Workers (Servers)

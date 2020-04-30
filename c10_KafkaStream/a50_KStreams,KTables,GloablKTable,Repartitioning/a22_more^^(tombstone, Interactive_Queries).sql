@@ -12,9 +12,11 @@
             - Interactive Queries
 
     # Interactive Queries
-        + Lightweight Embedded database
-            - I.Queries Allows stream processing layer to be treated as lightweight embedded database
-              for external application to lookup
+        + I.Queries Allows stream processing layer to be treated as
+          lightweight embedded database for external application to lookup
+        + Advantage
+          - Avoids having a separate table to share the results
+            with external applications
         + Use cases
             + Video gaming
             + Risk & Fraud

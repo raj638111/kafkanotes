@@ -3,8 +3,8 @@ version := "1.0"
 
 scalaSource in Compile := baseDirectory.value / "a10_Code"
 scalaSource in Test := baseDirectory.value / "a20_Test"
-Compile / scalaSource := baseDirectory.value / "a12_resource"
-Test / scalaSource := baseDirectory.value / "a22_resource"
+//Compile / scalaSource := baseDirectory.value / "a12_resource"
+//Test / scalaSource := baseDirectory.value / "a22_resource"
 
 
 scalaVersion := "2.11.8"

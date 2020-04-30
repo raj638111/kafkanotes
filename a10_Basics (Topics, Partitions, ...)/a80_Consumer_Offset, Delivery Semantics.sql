@@ -34,7 +34,7 @@
     + Kafka => Kafka workflows
       + Achieved using Streams API
     + Kafka => External systems
-      + Achieved using an Idempotent consumer
+      + Achieved using an Idempotent Producer
     + Advantage
       + No duplicate data
       + Message never gets lost

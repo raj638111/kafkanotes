@@ -1,4 +1,7 @@
 
+
+-- Get the list of consumer groups
+
 Note:
   + **When no consumer group is specified, Kafka generates a random
       consumer group name for us

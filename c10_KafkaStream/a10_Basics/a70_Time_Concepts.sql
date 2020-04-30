@@ -25,8 +25,7 @@
         + Describes the progress of stream with regards to time
         + Joins
             + Is leveraged by time dependent operation such as joins
-        + event-time
-            + Also called as event-time
+        + Also called as event-time
 
     # Reference
         https://docs.confluent.io/current/streams/concepts.html#time
