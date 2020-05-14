@@ -1,6 +1,7 @@
 
 == Retry ============================ #61
 
+
 -- retries
 
     # Can be used to handle transient failures
@@ -24,11 +25,15 @@
 
 -- max.in.flight.requests.per.connection
 
-    # The no of parallel request that can be made to a broker
+    # Is the no of messages that can be send in parallel
+
     # Defaults to 5
+        + ie 5 messages can be sent in parallel in a given time
         + This can make a message to a partition out of order
           when a message send is failed and that message is retried
           while in the mean time the next message might have been comitted by broker
+
+
     # Set to 1
         + If you need message order in a partition
             ~ NOTE: Idempotent producer would be a better option in this case
