@@ -26,6 +26,10 @@ object a10_Producer{
     // Create Producer
     val producer = new KafkaProducer[String, String](properties)
     // Send Record to Producer
+    // Note: This call can be made synchronous using producer.send(record).get()
+    //  But this will reduce producer throughput, as each send needs to wait for
+    //  the acknowledgement
+
     producer.send(record) // **Async call
     producer.flush() // Ensure that all buffered records are available for send()
                      // producer.close(): Flush & Close producer
