@@ -16,6 +16,7 @@
            in the meanwhile by the consumer to the group coordinator within the
            configured session interval new partitions are added
 
+
 -- How it works?
 
     Being a group coordinator (one of the brokers in the cluster) and a group leader
@@ -32,3 +33,4 @@
        the group coordinator, which sends this information to all the consumers.
 
 https://stackoverflow.com/questions/30988002/what-does-rebalancing-mean-in-apache-kafka-context
+https://stackoverflow.com/a/42017828/892857

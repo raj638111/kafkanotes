@@ -9,6 +9,11 @@
 # Kafka Monitoring: Definitive Guide +
 # Kafka Security
 
+# Encryption: In flight & At rest
+  Access control list
+    Kafka access control list can be stored in zookeeper
+  Authentication & Authorization
+  Serialization / Deserialization
 
 
 

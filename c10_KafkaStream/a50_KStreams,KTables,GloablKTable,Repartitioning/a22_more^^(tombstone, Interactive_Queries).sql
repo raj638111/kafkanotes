@@ -1,6 +1,6 @@
 
     # KTable
-        + Is an abstraction of KStream where each record represents an **update
+        + Is an abstraction of 'Changelog Stream' where each record represents an **update
 
     # tombstone
         + A record with value of null represent tombstone for that key

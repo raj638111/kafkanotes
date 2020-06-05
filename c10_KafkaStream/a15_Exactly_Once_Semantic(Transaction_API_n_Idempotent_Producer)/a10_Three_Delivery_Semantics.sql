@@ -14,7 +14,7 @@
 -- At least once semantics (**`acks=all` need to set for this)
 
   # Producer Behavior
-    + The producer tries to resend a message when ackt times out or producer
+    + The producer tries to resend a message when ack times out or producer
       receives an error
 
   # There are 3 possible scenarios here based on what happens in broker

@@ -19,6 +19,6 @@
     - They handle read from all brokers
 
   + Note:
-    - Producers & Consumers do not write to Zookeepers, it is only
+    - Producers & Consumers do not write to Zookeeper, it is only
       the brokers that write / read metadata from Zookeeper
     - Since version > 0.10, Consumers Offsets are no longer stored in Zookeeper

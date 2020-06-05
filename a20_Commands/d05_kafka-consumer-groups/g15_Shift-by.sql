@@ -5,7 +5,7 @@
 
 ./bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group first_group --reset-offsets --shift-by -3 --execute --topic first_topic
              ^ Positive number moves the offset forward
-               A Negative number moves the offset behind
+               Negative number moves the offset behind
 
 GROUP                          TOPIC                          PARTITION  NEW-OFFSET
 first_group                    first_topic                    0          2

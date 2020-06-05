@@ -32,7 +32,7 @@
 
   3. 'Exactly Once'
     + Kafka => Kafka workflows
-      + Achieved using Streams API
+      + Achieved using Streams API (which uses Idempotent producer + Transaction API)
     + Kafka => External systems
       + Achieved using an Idempotent Producer
     + Advantage

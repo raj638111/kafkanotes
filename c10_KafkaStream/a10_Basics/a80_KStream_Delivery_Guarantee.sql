@@ -6,6 +6,6 @@
         + At-least-once-semantics
             - Records are never lost, but may be redelivered
 
-        + Exactly-once semantic (Uses Idempotent producer)
+        + Exactly-once semantic (Uses Idempotent producer & Transaction API)
 
     https://docs.confluent.io/current/streams/concepts.html#processing-guarantees

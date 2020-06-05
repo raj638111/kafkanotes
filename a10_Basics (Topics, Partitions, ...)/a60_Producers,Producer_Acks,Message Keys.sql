@@ -21,8 +21,9 @@
                     Producer will wait for acknowledgement from Leader
                     Limited data loss
                     ## so when does the data loss happens?
-      . acks = all  Producer will wait for acknowledgement from Leader & all replicas
-                    No data loss
+      . acks = all  Producer will wait for acknowledgement from Leader + Replica brokers
+                    specified by the ISR count (Normally ISR = 2 => leader + 1 broker)
+                    (no data loss unless 2 ISR brokers goes down here)
 
 -- Message Keys
 
