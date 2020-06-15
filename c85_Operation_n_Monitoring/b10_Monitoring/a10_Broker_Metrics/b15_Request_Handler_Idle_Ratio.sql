@@ -1,13 +1,13 @@
 
--- Request Handler Idle ration
-
-  # Lower this number, the more loaded the broker is. Experience
-    tells us that idle ratios lower than 20% indicate a potential problem, and lower
-    than 10% is usually an active performance problem
+-- Request Handler Idle ratio
 
   # JMX Bean
     kafka.server:type=KafkaRequestHandlerPool,name=RequestHandlerAvgIdlePercent
     Value: Float, between zero and one inclusive
+
+  # Lower this number, the more loaded the broker is. Experience
+    tells us that idle ratios lower than 20% indicate a potential problem, and lower
+    than 10% is usually an active performance problem
 
   # Kafka uses two thread pools for handling all client requests
     + Network Handlers

@@ -3,9 +3,12 @@
 
     # Binary data raw bytes are encoded in Base64
         - Base64 encoding safely transfers bytes over the internet
-          with breaking protocol
+          with out breaking any protocols
 
     # Batching in produce request is possible
+
+    # Example data that can be sent,
+      + Image, String with weird characters etc...
 
     # https://docs.confluent.io/current/kafka-rest/docs/index.html
 

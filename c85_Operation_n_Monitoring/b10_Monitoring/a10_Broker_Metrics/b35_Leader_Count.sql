@@ -1,4 +1,7 @@
 
+  # JMX MBean kafka.server:type=ReplicaManager,name=LeaderCount
+    Value range Integer, zero or greater
+
   # Shows the number of partitions that the broker is currently
     the leader for
 
@@ -9,5 +12,3 @@
     for many reasons, such as a Zookeeper session expiration, and it will not automatically
     take leadership back once it recovers
 
-  # JMX MBean kafka.server:type=ReplicaManager,name=LeaderCount
-    Value range Integer, zero or greater

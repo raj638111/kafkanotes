@@ -7,3 +7,5 @@
 
         + Has support for old producer & consumer API (Kafka <= 0.8)
 
+
+    (We are going to use V2)

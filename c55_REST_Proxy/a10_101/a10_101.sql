@@ -9,7 +9,7 @@
           AVRO or JSON or Binary
 
         + Integrated with Schema Registry so that consumers & producers can
-          easily read & write kafka topic
+          easily read & write to Avro topic
 
     # Disadvantage
 

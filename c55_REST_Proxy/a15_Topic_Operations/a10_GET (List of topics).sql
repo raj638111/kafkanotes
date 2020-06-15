@@ -1,11 +1,12 @@
 
-    # 46
+-- Request
 
+    # 46
     http://127.0.0.1:8082/topics
 
-    Header > Accept = application/vnd.kafka.v2+json
+    Header
+      + Accept = application/vnd.kafka.v2+json
 
-    (Accept header is a standard. Just include them)
 
  -- Result
 

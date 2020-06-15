@@ -1,14 +1,14 @@
 
 == Prerequisite ==
 
-    # Create the topic using command line (Not possible with REST)
+  # Create the topic using command line (Not possible with REST)
 
-/Users/raj/kafka/bin $ ./kafka-topics.sh --create --zookeeper localhost:2181 \
---topic rest-binary --replication-factor 1 --partitions 1
+  /Users/raj/kafka/bin $ ./kafka-topics.sh --create --zookeeper localhost:2181 \
+  --topic rest-binary --replication-factor 1 --partitions 1
 
-Created topic rest-binary.
+  Created topic rest-binary.
 
-== Input ==
+== Request ==
 
 -- JSON
 
@@ -35,6 +35,7 @@ Created topic rest-binary.
     }
   ]
 }
+(Key & value ^^ are encoded as expected)
 
 -- Query
 

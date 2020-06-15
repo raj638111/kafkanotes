@@ -11,7 +11,7 @@ kafka-topics --create --zookeeper localhost:2181 --topic rest-json \
     + 2nd record: Value is an array
     + 3rd record: Number
 
-Query
+POST
     http://127.0.0.1:8082/topics/rest-json
 
 JSON
