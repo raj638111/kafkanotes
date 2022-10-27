@@ -25,7 +25,13 @@
     
   + What if the previous leader comes back again?
     - It will try to become the leader again...politics...
-  
+
+-- Preferred Leader
+
+  + Is the broker that was Leader when the topic was first created
+    ( It is preferred because when partitions are first created,
+      the leaders are balanced between brokers )
+
 -- Reference
     
   https://www.udemy.com/apache-kafka/learn/v4/t/lecture/11566876?start=0  

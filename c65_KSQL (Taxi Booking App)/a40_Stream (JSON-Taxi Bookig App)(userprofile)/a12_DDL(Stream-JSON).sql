@@ -1,5 +1,6 @@
 
 
+
 -- Create topic
 
 kafka-topics --zookeeper localhost:2181 --create --partitions 1 --replication-factor 1 --topic USERPROFILE

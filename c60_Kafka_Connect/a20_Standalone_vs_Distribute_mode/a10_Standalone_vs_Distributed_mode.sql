@@ -6,7 +6,7 @@
         + Runs all the connectors & tasks
 
     # Configuration
-        + Is bundled with the process
+        + Is bundled with the process using CLI
 
     # Advantage
         + Easy to get started (Good for development & testing)

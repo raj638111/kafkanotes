@@ -11,7 +11,10 @@
     - Can read from multiple partitions in Parallel
     - Example if we have P1 & P2
       . Will read little bit from P1 & little bit from P2 etc...
-      
+  + NOT Thread Safe
+    - Consumer is NOT thread safe
+    - A Single consumer can only be used by one thread
+
 -- Consumer Group
 
   + Consumer read data in Consumer Group

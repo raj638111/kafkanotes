@@ -1,6 +1,6 @@
 
 
--- Request Syntax (Content-Type + Accept header) #44
+-- Request Syntax (Content-Type + Accept-header) #44
 
     # 'Content-Type' and 'Accept'-header (Accept is one of the header)
       needs be specified

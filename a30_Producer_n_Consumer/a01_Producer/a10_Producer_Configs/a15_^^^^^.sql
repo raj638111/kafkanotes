@@ -1,4 +1,5 @@
 
+(Note: 'acks' is a producer setting)
 
 -- acks = 0
 
@@ -22,6 +23,7 @@
     + Leader will collect & send the acks of all replicas
     + ** Adds latency as we have to wait for all the replicas to ack
     + -- min.insync.replicas
+        . Is a topic / broker setting
         . Need to set when acks=all is used
         . Can be set at broker level or topic level (override)
         . Example: min.insync.replicas = 2 (2 is common)

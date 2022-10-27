@@ -13,7 +13,7 @@
 
   # Leader Election
 
-    + Performs leader election in case a leader broker (also called as ***Controller)
+    + Performs leader election in case a leader broker for a partition
       goes down
 
     + Done through voting mechanism in which Zookeeper votes for a server to become
@@ -30,10 +30,12 @@
       . Topics
       . Consumer Groups
       . Users
+    + ACLs are stored in,
+      . /kafka-acl/ ZNode
 
   # Store Quotas
 
-
+  # Controller Registration
 
 
 

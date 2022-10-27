@@ -34,7 +34,7 @@
     4. --partition NUM
       + Consume message only from partition `NUM`
 
--- Consumer the __consumer_offsets topic
+-- Consume the __consumer_offsets topic
 
   kafka-console-consumer.sh --zookeeper zoo1.example.com:2181/kafka-cluster \
   --topic __consumer_offsets --formatter \

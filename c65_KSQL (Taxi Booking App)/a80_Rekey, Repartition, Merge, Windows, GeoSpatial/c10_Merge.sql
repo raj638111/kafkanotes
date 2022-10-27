@@ -1,6 +1,6 @@
 
 
-# Note: In order to combine two strea
+# Note: In order to combine two streams
 create stream rr_america_raw with (kafka_topic='riderequest-america', value_format='avro');
 create stream rr_europe_raw with (kafka_topic='riderequest-europe', value_format='avro');
 

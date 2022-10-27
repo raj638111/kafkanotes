@@ -1,3 +1,9 @@
+
+# Note:
+  + ROWKEY:  Is key of the topic
+  + ROWTIME: The time in which data was created (EPOCH time)
+  https://www.confluent.io/stream-processing-cookbook/ksql-recipes/creating-composite-key/
+
 describe extended USER_PROFILE_PRETTY;
 
 Name                 : USER_PROFILE_PRETTY

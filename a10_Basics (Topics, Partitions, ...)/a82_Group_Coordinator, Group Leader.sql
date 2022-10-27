@@ -7,7 +7,9 @@
 
   + Is basically a broker in the cluster
   + Every Consumer Group gets its own Group Coordinator
-
+  + Consumer interacts with Group coordinator to commit its
+    offset to __consumer_offset topic
+    (ie... consumer do not directly write to __consumer_offset topic)
 
 -- Group Leader
 

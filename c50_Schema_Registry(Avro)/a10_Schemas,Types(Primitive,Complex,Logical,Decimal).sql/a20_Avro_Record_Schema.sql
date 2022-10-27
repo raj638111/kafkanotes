@@ -8,10 +8,13 @@
             - Name of the schema
         + Namespace*
             - Equivalent to package in Java
+        + Type
+            - 'record'
         + Doc
             - Documentation to explain the schema
         + Aliases
             - Optional other names for schema
+
         + Fields* (Array of field)
             - Name*
                 . Name of the field

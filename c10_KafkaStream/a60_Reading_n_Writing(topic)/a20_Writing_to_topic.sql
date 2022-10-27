@@ -12,7 +12,7 @@
 
 -- through()
 
-    # Write to a topic & get stream & table from the topic
+    # Write to a topic & get stream or table from the topic
         + stream.through(...)
         + table.through(...)
 

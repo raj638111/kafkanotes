@@ -23,6 +23,9 @@ object c10_Consumer {
     prop.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest") // earliest, latest
 
     val consumer = new KafkaConsumer[String, String](prop)
+    // We can also use regex to subscribe to multiple topics like
+    //  consumer.subscribe(Pattern.compile("topic\..*"))
+    //  (This ^^ subscribes to call the topics that start with name 'topic.' )
     consumer.subscribe(List("first_topic").asJava)
     while(true) {
       val records = consumer.poll(Duration.ofMillis(100))

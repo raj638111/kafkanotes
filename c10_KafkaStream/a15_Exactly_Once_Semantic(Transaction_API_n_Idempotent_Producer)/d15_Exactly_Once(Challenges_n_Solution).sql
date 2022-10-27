@@ -8,7 +8,7 @@
   # How is this solved?
     + Through Replication
     + If N is the replication factor. Kafka can tolerate N-1 broker failures
-      at a given time to guarantee **NO loss of data
+      at a **given time to guarantee **NO loss of data
       . Example... if we have 10 node cluster and N is 3; In a give time
         2 Brokers holding the 2 of the 2 partition can fail
 

@@ -56,7 +56,12 @@
       T8 will always to to P1 etc..
     (Note here; we do not say which key goes to which partition, Producer decides
     based on Hashing. But all we know is a specific key will always go to a 
-    specific partition)      
+    specific partition)
+
+  + Thread safe
+    . Producer is Thread safe
+    . One producer can be used in multiple threads
+
       
 -- Reference
 

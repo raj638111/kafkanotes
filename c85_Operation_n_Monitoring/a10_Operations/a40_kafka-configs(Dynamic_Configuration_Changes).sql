@@ -6,10 +6,13 @@
   # Are configs that can be overridden for topics / client quotas when the
     cluster is running
 
-  # Dynamic Configuration can be done for,
+  # Can be done for,
     + per-topic
     + per-client
     + overrides
+
+  # Is stored in
+    + Zookeeper
 
 -- Override (Topic configuration defaults)
 
@@ -72,4 +75,18 @@ delete.retention.ms   How long, in milliseconds, deleted tombstones will be reta
   Updated config for topic: "my-topic".
 
 
+-- Useful properties
+
+  # Quotas
+    (Can be applied for user, client-id)
+    + producer_byte_rate
+      There are five brokers in a cluster, a topic with 10 partitions and replication factor of 3, and a quota of producer_bytes_rate of 1 MB/sec has been specified for the client. What is the maximum throughput allowed for the client?
+        0.33 MB/s
+        ​10 MB/s
+        ​5 MB/s
+        (Correct)
+        ​1 MB/s
+        (Incorrect)
+
+    + consumer_byte_rate
 

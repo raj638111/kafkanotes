@@ -9,7 +9,7 @@
 
 
 
--- Goal (ie Handson)
+-- Goal (ie Hands-on)
 
   create stream of requested rides in Europe using data gen
   create stream of requested rides in USA using data gen

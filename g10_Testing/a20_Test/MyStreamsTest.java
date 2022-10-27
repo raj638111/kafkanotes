@@ -48,7 +48,8 @@ public class MyStreamsTest {
         // Create 'ConsumerRecordFactory' to create 'ConsumerRecord'
         // *** The reason we need 'ConsumerRecordFactory' is because the
         //     ConsumerRecord should be of type 'ConsumerRecord<byte[], byte[]>'
-        //     and can only be created using ConsumerRecordFactory
+        //     in order to be fed to TopologyTestDriver
+        //     ...and can only be created using ConsumerRecordFactory
         ConsumerRecordFactory<Integer, String> factory =
                 new ConsumerRecordFactory<>("test_input_topic",
                         new IntegerSerializer(), new StringSerializer());
